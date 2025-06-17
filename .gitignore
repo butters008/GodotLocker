@@ -1,0 +1,47 @@
+# Godot 4+ specific ignores
+.godot/
+/android/
+
+
+# Godot-specific
+.import/
+export.cfg
+export_presets.cfg
+.godot/
+
+# Godot Mono-specific
+.mono/
+data_*/             # Mono build artifacts
+mono_crash.*        # Mono crash logs
+*.csproj
+*.sln
+*.user
+*.pidb
+*.suo
+*.sdf
+*.sln.docstates
+
+# Build output
+bin/
+obj/
+Build/
+*.exe
+*.dll
+*.pdb
+*.mdb
+*.cache
+*.log
+
+# VS Code
+.vscode/
+
+# Rider / JetBrains
+.idea/
+*.DotSettings
+
+# OS-specific
+.DS_Store
+Thumbs.db
+desktop.ini
+
+.fake

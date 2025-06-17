@@ -1,0 +1,49 @@
+[gd_scene load_steps=2 format=3 uid="uid://ddoen0a11m72t"]
+
+[ext_resource type="Script" uid="uid://b5cxcgyipeimi" path="res://Menu/MainMenu.cs" id="1_e1xpn"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_e1xpn")
+
+[node name="CanvasGroup" type="CanvasGroup" parent="."]
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasGroup"]
+modulate = Color(0, 1, 0, 1)
+offset_left = 224.0
+offset_top = 14.0
+offset_right = 728.0
+offset_bottom = 54.0
+text = "Godot 4.4.1 Code Locker - Mono Edition "
+fit_content = true
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ItemList" type="ItemList" parent="CanvasGroup"]
+offset_right = 920.0
+offset_bottom = 391.0
+
+[node name="Start_PlatformerGame" type="Button" parent="CanvasGroup/ItemList"]
+layout_mode = 0
+offset_left = 332.0
+offset_top = 106.0
+offset_right = 424.0
+offset_bottom = 137.0
+text = "Platformer"
+
+[node name="Quit" type="Button" parent="CanvasGroup/ItemList"]
+layout_mode = 0
+offset_left = 399.0
+offset_top = 321.0
+offset_right = 441.0
+offset_bottom = 352.0
+text = "Quit
+"
+
+[connection signal="pressed" from="CanvasGroup/ItemList/Start_PlatformerGame" to="." method="Btn_PlatformerLevel_Pressed"]
+[connection signal="pressed" from="CanvasGroup/ItemList/Quit" to="." method="QuitButtonPressed"]

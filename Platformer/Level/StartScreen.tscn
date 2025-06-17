@@ -1,0 +1,37 @@
+[gd_scene load_steps=2 format=3 uid="uid://bbhtmw4f8s7hh"]
+
+[ext_resource type="Script" uid="uid://j1nnq34uq44x" path="res://Platformer/Level/PlatformerMainMenu.cs" id="1_3hjud"]
+
+[node name="Platformer Main Menu" type="Node2D"]
+script = ExtResource("1_3hjud")
+
+[node name="ItemList" type="ItemList" parent="."]
+offset_right = 772.0
+offset_bottom = 292.0
+
+[node name="StartButton" type="Button" parent="ItemList"]
+layout_mode = 0
+offset_left = 288.0
+offset_top = 59.0
+offset_right = 384.0
+offset_bottom = 90.0
+text = "Start Game"
+
+[node name="ExitToMainMenu" type="Button" parent="ItemList"]
+layout_mode = 0
+offset_left = 318.0
+offset_top = 113.0
+offset_right = 355.0
+offset_bottom = 144.0
+text = "Exit"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = 241.0
+offset_top = 11.0
+offset_right = 594.0
+offset_bottom = 51.0
+text = "Platformer
+"
+
+[connection signal="pressed" from="ItemList/StartButton" to="." method="PlatformerStartGame"]
+[connection signal="pressed" from="ItemList/ExitToMainMenu" to="." method="ExitPlatformerGame"]
