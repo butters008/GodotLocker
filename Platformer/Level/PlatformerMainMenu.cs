@@ -5,6 +5,7 @@ public partial class PlatformerMainMenu : Node2D
 {
     public void PlatformerStartGame()
     {
+        GD.Print("Hello");
         GetTree().ChangeSceneToFile("res://Platformer/Level/GameDemo.tscn");
     }
 
