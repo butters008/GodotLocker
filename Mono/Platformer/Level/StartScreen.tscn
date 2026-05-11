@@ -1,6 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://bbhtmw4f8s7hh"]
+[gd_scene format=3 uid="uid://bbhtmw4f8s7hh"]
 
-[ext_resource type="Script" uid="uid://j1nnq34uq44x" path="res://Platformer/Level/PlatformerMainMenu.cs" id="1_3hjud"]
+[ext_resource type="Script" uid="uid://j1nnq34uq44x" path="res://Mono/Platformer/Level/PlatformerMainMenu.cs" id="1_3hjud"]
 
 [node name="Platformer Main Menu" type="Node2D"]
 script = ExtResource("1_3hjud")

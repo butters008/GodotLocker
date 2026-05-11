@@ -32,7 +32,8 @@ version_control/autoload_on_startup=true
 [file_customization]
 
 folder_colors={
-"res://Art/": "blue",
+"res://Art/": "yellow",
+"res://GDScript/": "blue",
 "res://Menu/": "purple",
-"res://Platformer/": "red"
+"res://Mono/": "green"
 }

@@ -1,8 +1,8 @@
-[gd_scene load_steps=2 format=3 uid="uid://ddoen0a11m72t"]
+[gd_scene format=3 uid="uid://ddoen0a11m72t"]
 
-[ext_resource type="Script" uid="uid://b5cxcgyipeimi" path="res://Menu/MainMenu.cs" id="1_e1xpn"]
+[ext_resource type="Script" uid="uid://b5cxcgyipeimi" path="res://Mono/Menu_And_UI/MainMenu.cs" id="1_e1xpn"]
 
-[node name="MainMenu" type="Control"]
+[node name="MainMenu" type="Control" unique_id=989646400]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -11,9 +11,9 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_e1xpn")
 
-[node name="CanvasGroup" type="CanvasGroup" parent="."]
+[node name="CanvasGroup" type="CanvasGroup" parent="." unique_id=896137536]
 
-[node name="RichTextLabel" type="RichTextLabel" parent="CanvasGroup"]
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasGroup" unique_id=274002812]
 modulate = Color(0, 1, 0, 1)
 offset_left = 224.0
 offset_top = 14.0
@@ -24,11 +24,11 @@ fit_content = true
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="ItemList" type="ItemList" parent="CanvasGroup"]
+[node name="ItemList" type="ItemList" parent="CanvasGroup" unique_id=2089821921]
 offset_right = 920.0
 offset_bottom = 391.0
 
-[node name="Start_PlatformerGame" type="Button" parent="CanvasGroup/ItemList"]
+[node name="Start_PlatformerGame" type="Button" parent="CanvasGroup/ItemList" unique_id=1151839111]
 layout_mode = 0
 offset_left = 332.0
 offset_top = 106.0
@@ -36,7 +36,7 @@ offset_right = 424.0
 offset_bottom = 137.0
 text = "Platformer"
 
-[node name="Quit" type="Button" parent="CanvasGroup/ItemList"]
+[node name="Quit" type="Button" parent="CanvasGroup/ItemList" unique_id=126881974]
 layout_mode = 0
 offset_left = 399.0
 offset_top = 321.0
